@@ -1,0 +1,29 @@
+{
+  "name": "husky-git-hooks",
+  "version": "1.0.0",
+  "description": "Prevent bad git commits and versioning code, using hooks on your git repository.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Executing test\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vinnyfs89/husky-git-hooks.git"
+  },
+  "author": "Vinicius Feitosa da Silva <viniciusfesil@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vinnyfs89/husky-git-hooks/issues"
+  },
+  "homepage": "https://github.com/vinnyfs89/husky-git-hooks#readme",
+  "devDependencies": {
+    "husky": "^1.0.0-rc.1"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm test",
+      "pre-push": "npm test",
+      "...": "..."
+    }
+  }
+}
